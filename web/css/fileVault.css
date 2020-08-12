@@ -1,0 +1,89 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24 Jul, 2020, 4:48:45 PM
+    Author     : hp
+*/
+
+
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Lato-Regular;
+  src: url('Lato-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: Lato-Bold;
+  src: url('Lato-Bold.ttf'); 
+}
+body {
+  /*font-family: Arial, Helvetica, sans-serif;*/
+  background: #ffc185;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 100%; /* only for demonstration, should be removed */
+  padding-left: 150px;
+  padding-top: 150px;
+ 
+  
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0px;
+  font-family: Lato-Bold;
+  font-size: 18px;
+}
+li {
+  margin-bottom: 40px;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
